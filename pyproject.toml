@@ -4,13 +4,10 @@ version = "0.1.0"
 description = ""
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "eevee",
-    "kabigon",
-]
+dependencies = ["eevee", "kabigon"]
 
 [tool.uv.workspace]
-members = ["libs/eevee", "libs/kabigon"]
+members = ["src/eevee", "src/kabigon"]
 
 [tool.uv.sources]
 eevee = { workspace = true }
